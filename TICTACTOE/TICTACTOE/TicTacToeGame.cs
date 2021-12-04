@@ -14,8 +14,7 @@ namespace TICTACTOE
             for(int i = 1; i <= board.Length; i++)
             {
                 board[i] = ' ';
-            }
-            
+            } 
         }
         public char ChooseInput()
         {
@@ -32,6 +31,17 @@ namespace TICTACTOE
             }
             else
                 return 'w';
+        }
+        public void DisplayBoard()
+        {
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("___|_____|____");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("___|_____|____");
+            Console.WriteLine("   |     |    ");
+            Console.WriteLine("   |     |    ");
         }
     }
 }
