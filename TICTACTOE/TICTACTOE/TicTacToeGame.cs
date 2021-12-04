@@ -16,6 +16,22 @@ namespace TICTACTOE
                 Console.WriteLine("Enter the spaces of board");
                 board[i] = ' ';
             }
+            string player1, player2;
+            int player = 1;
+            Console.WriteLine("Enter the player1 name");
+            player1 = Console.ReadLine();
+            Console.WriteLine("Enter the player2 name");
+            player2 = Console.ReadLine();
+            if (player % 2 == 0)
+            {
+                Console.WriteLine("palyer 1 is chance");
+                player1 = "X";
+            }
+            else
+            {
+                Console.WriteLine("palyer 2 is chance");
+                player2 = "O";
+            }
         }
     }
 }
