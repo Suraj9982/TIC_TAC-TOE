@@ -8,10 +8,10 @@ namespace TICTACTOE
 {
     class TicTacToeGame
     {
+        static char[] board = new char[10];
         public void GameBoard()
-        {
-            char[] board = new char[10];
-            for(int i = 1; i <= board.Length; i++)
+        { 
+            for(int i = 1; i < board.Length; i++)
             {
                 board[i] = ' ';
             } 
@@ -34,14 +34,15 @@ namespace TICTACTOE
         }
         public void DisplayBoard()
         {
+            this.GameBoard();
             Console.WriteLine("   |     |    ");
-            Console.WriteLine("   |     |    ");
+            Console.WriteLine(" {0}  | {1}    |  {2}  ",board[1],board[2],board[3]);
             Console.WriteLine("___|_____|____");
             Console.WriteLine("   |     |    ");
-            Console.WriteLine("   |     |    ");
+            Console.WriteLine(" {0}  | {1}    |  {2}  ",board[4], board[5], board[6]);
             Console.WriteLine("___|_____|____");
             Console.WriteLine("   |     |    ");
-            Console.WriteLine("   |     |    ");
+            Console.WriteLine(" {0}  |  {1}   |  {2}  ",board[4], board[5], board[6]);
         }
     }
 }
